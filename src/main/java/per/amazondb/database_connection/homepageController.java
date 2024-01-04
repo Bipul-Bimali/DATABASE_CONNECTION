@@ -15,39 +15,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Objects;
-import java.util.Properties;
 import per.amazondb.database_connection.FileManager;
-
 public class homepageController {
-
-    @FXML
-    private Button debugkey;
-
-    @FXML
-//    this method is for debugging. establishes quick connection to AWS db
-    void debug() {
-        url = "jdbc:postgresql://"+"citiesincanada.c10osmeq4caq.ca-central-1.rds.amazonaws.com"+"/"+"initialcanadacity";
-
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:postgresql://"+"citiesincanada.c10osmeq4caq.ca-central-1.rds.amazonaws.com"+"/"+"initialcanadacity", "canadacity", "canadacity");
-            System.out.println("connection Successful");
-        }
-        catch (SQLException e){
-            System.out.println(e);
-        }
-        try {
-            Parent roots = FXMLLoader.load(getClass().getResource("Query.fxml"));
-            System.out.println("DEBUGERROR");
-            Stage childstage = new Stage();
-            childstage.setTitle("Query result");
-            childstage.setScene(new Scene(roots));
-            childstage.show();
-        }
-        catch (IOException e){
-            System.out.println(e);
-        }
-    }
 
     @FXML
     private Button Test_button;

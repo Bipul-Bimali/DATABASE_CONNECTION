@@ -7,30 +7,6 @@ import java.security.PublicKey;
 import java.util.Scanner;
 
 public class FileManager {
-//    public static void main(String[] args) {
-//        write_file("hellp.txt", "nonameyesname");
-//        try {
-//            File myObj = new File("filename.txt");
-//            if (myObj.createNewFile()) {
-//                System.out.println("File created: " + myObj.getName());
-//            } else {
-//                System.out.println("File already exists.");
-//            }
-//            try {
-//                FileWriter myWriter = new FileWriter("filename.txt");
-//                myWriter.write("HIIIIIIIIIIIII");
-//                myWriter.close();
-//                System.out.println("Successfully wrote to the file.");
-//            } catch (IOException e) {
-//                System.out.println("An error occurred.");
-//                e.printStackTrace();
-//            }
-//        } catch (IOException e) {
-//            System.out.println("An error occurred.");
-//            e.printStackTrace();
-//        }
-//
-//    }
     public static boolean create_file(String file_name){
         try {
             File file = new File(file_name);
