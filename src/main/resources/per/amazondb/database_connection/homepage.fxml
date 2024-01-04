@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="per.amazondb.database_connection.homepageController">
+   <children>
+      <Text layoutX="36.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="serverAddress" />
+      <TextField fx:id="Address" layoutX="39.0" layoutY="86.0" onKeyPressed="#enter_pressed" prefHeight="31.0" prefWidth="180.0" />
+      <TextField fx:id="Username" layoutX="39.0" layoutY="138.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="Password" layoutX="40.0" layoutY="200.0" />
+      <TextField fx:id="Database_name" layoutX="39.0" layoutY="276.0" />
+      <TextField fx:id="Port" layoutX="259.0" layoutY="86.0" prefHeight="31.0" prefWidth="86.0" />
+      <Text layoutX="39.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+      <Text layoutX="39.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text layoutX="40.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database Name" />
+      <Text layoutX="259.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" />
+      <Button fx:id="Test_button" layoutX="246.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#Test" prefHeight="31.0" prefWidth="139.0" text="Test" />
+      <Button fx:id="Connect_button" layoutX="405.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#Connect" prefHeight="31.0" prefWidth="148.0" text="Connect" />
+      <Button fx:id="Password_visibility" layoutX="244.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#togglevisibility" text="Show" />
+      <Button fx:id="debugkey" layoutX="436.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#debug" text="Button" />
+      <Label layoutX="129.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="316.0" text="Postgres Database Credintials">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="330.0" text="Created and Designed By Bipul Bimali" />
+   </children>
+</AnchorPane>
