@@ -1,4 +1,3 @@
-```markdown
 # Remote Postgres Database Connection
 
 This Java application allows users to connect to a remote PostgreSQL database and execute SQL queries. The project consists of three main components: database connection, file management, and a graphical user interface (GUI) built using JavaFX.
