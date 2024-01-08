@@ -1,5 +1,5 @@
+// Query Controller class manages the actions and events of the Query.fxml file
 package per.amazondb.database_connection;
-
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,12 +12,13 @@ import java.util.Comparator;
 import per.amazondb.database_connection.FileManager;
 
 public class QueryController {
+    // FXML elements representing UI components
     @FXML
     private TableView display_table;
     @FXML
     private TextField query;
-
     private final ObservableList<ObservableList<String>> data_matrix = FXCollections.observableArrayList();
+    // Method to generate columns based on Resultset Metadata
     public  void Column_generator(ResultSet result){
         try {
             int column_count = result.getMetaData().getColumnCount();
