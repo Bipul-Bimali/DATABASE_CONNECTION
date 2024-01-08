@@ -1,5 +1,5 @@
+// Main class to start JavaFx application
 package per.amazondb.database_connection;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
+    // Start Method Initializes the main window
     @Override
     public void start(Stage stage) throws IOException {
         System.out.println("Window displayed");
@@ -18,7 +19,7 @@ public class Main extends Application {
         stage.show();
 
     }
-
+// Main method to launch the application
     public static void main(String[] args) {
         launch();
     }
