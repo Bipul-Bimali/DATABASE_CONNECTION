@@ -24,9 +24,6 @@ public class QueryController {
             int column_count = result.getMetaData().getColumnCount();
             System.out.println(column_count);
             ResultSetMetaData meta_data = result.getMetaData();
-            System.out.println("METADATA collected");
-            String column_names = result.getMetaData().getColumnName(1);
-            System.out.println(column_names);
             display_table.getColumns().clear();
                 // Create a new column
             for (int column_index = 0; column_index <= meta_data.getColumnCount(); column_index++) {
@@ -63,10 +60,9 @@ public class QueryController {
             PreparedStatement prepared_statement = connection_bool.prepareStatement(query.getText());
             System.out.println(query.getText());
             ResultSet result_set = prepared_statement.executeQuery();
-            Column_generator(result_set);                //This method manages metadata i.e. get name of column number of colums
-            System.out.println(result_set.getMetaData().getColumnCount());
+            Column_generator(result_set);
             int row_index = 1;
-            while(result_set.next()) {    //this loop reads all the string data
+            while(result_set.next()) {
                 ObservableList<String> row_data = FXCollections.observableArrayList();
                 for(int i = 0; result_set.getMetaData().getColumnCount()>=i ; i++){
                     if(i!=0){
