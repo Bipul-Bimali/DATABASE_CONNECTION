@@ -22,7 +22,7 @@
       <Button fx:id="Test_button" layoutX="246.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#Test" prefHeight="31.0" prefWidth="139.0" text="Test" />
       <Button fx:id="Connect_button" layoutX="405.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#Connect" prefHeight="31.0" prefWidth="148.0" text="Connect" />
       <Button fx:id="Password_visibility" layoutX="244.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#togglevisibility" text="Show" />
-      <Button fx:id="debugkey" layoutX="436.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#debug" text="Button" />
+      <Button fx:id="debugkey" layoutX="436.0" layoutY="154.0" mnemonicParsing="false" text="Button" />
       <Label layoutX="129.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="316.0" text="Postgres Database Credintials">
          <font>
             <Font name="Berlin Sans FB Bold" size="21.0" />

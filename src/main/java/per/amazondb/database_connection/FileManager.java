@@ -1,12 +1,14 @@
+// FileManager class handles file-related operations such as creating, writing and reading files
 package per.amazondb.database_connection;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
-import java.io.IOException;  // Import the IOException class to handle errors
-import java.io.File;  // Import the File class
+import java.io.IOException;
+import java.io.File;
 import java.security.PublicKey;
 import java.util.Scanner;
 
 public class FileManager {
+// Method to create a file with given filename
     public static boolean create_file(String file_name){
         try {
             File file = new File(file_name);
@@ -23,6 +25,8 @@ public class FileManager {
         }
         return false;
     }
+
+    // Method to write content to the file with given file_name
     public static boolean write_file(String file_name, String content){
         if(create_file(file_name)){
             try {
@@ -37,6 +41,7 @@ public class FileManager {
         }
         return false;
     }
+    // Method to read content from the file with the given file_name
     public static String[] read_file(String file_name){
         String[]  file_content ={"","",""};
         try {
